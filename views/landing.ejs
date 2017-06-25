@@ -1,0 +1,81 @@
+<% include ./partials/header %>
+
+    <link rel="stylesheet" href="/stylesheets/landing.css">
+    <div class="wrapper">
+        <div class="section section-header">
+            <div class="container">
+                <div id="header-title">
+                    <h1>Brennen Programs</h1>
+                    <h3>Fullstack Web Development</h3>
+                    <nav class="navbar">
+                      <div class="container-fluid">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                          <ul id="social-icons" class="nav navbar-nav">
+                            <li><a href="https://www.facebook.com/brennen.davis.54" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/brennenrocks_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/brennen-davis/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                            <li><a href="https://github.com/BrennenRocks" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </div><!-- /.container -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-content">
+          <div class="section-projects">
+            <div class="container">
+                <div class="row">
+                    <div class="title">Web</div>
+                    <hr class="web">
+                </div>
+                <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+                  <% projects.forEach(function(project){ %>
+                      <div class="col-md-4 col-sm-6">
+                          <div class="thumbnail">
+                              <img src="<%= project.image %>">
+                              <div class="caption">
+                                  <h4><%= project.title %></h4>
+                              </div>
+                              <p>
+                                  <a href="/projects/<%= project._id %>" class="btn btn-primary">More Info</a>
+                              </p>
+                          </div>
+                      </div>
+                  <% }); %>
+              </div>
+            </div>
+          </div>
+          <div class="section-about-me">
+            <div class="container">
+              <div class="row">
+                <div class="title">What I Know</div>
+                <hr class="web">
+              </div>
+              <div class="row text-center about-me-content">
+                <div class="col-md-6">
+                  <div class="sub-title">Front End</div>
+                  <ul>
+                    <li><i class="icon-html5-alt"></i> HTML5</li>
+                    <li><i class="icon-css3-alt"></i> CSS3</li>
+                    <li><i class="icon-javascript-alt"></i> JavaScript</li>
+                    <li><i class="icon-jquery"></i> jQuery</li>
+                    <li><i class="icon-bootstrap"></i> Bootstrap</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="sub-title">Back End</div>
+                    <ul>
+                      <li><i class="icon-nodejs"></i> Node.js</li>
+                      <li><i class="icon-mongodb"></i> MongoDB</li>
+                      <li><i class="icon-npm"></i> ExpressJs</li>
+                      <li><i class="icon-looking"></i> RESTful API</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+<% include ./partials/footer %>

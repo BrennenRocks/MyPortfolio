@@ -1,0 +1,119 @@
+h1{
+	font-weight: 700;
+	font-size: 5em;
+}
+
+body{
+    background-color: black;
+    margin-top: 50px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.section-header{
+    color: white;
+    background-image: url(https://source.unsplash.com/TgmC7oCh9Jk);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.section-header .container{
+    width: 100%;
+    height: 700px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-projects{
+    background-color: #f2f2f2;
+}
+
+.section-about-me{
+    background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-projects .title{
+    color: black;
+    display: block;
+    font-size: 3.7em;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.section-about-me .title{
+    color: white;
+    display: block;
+    font-size: 3.7em;
+    margin: 50px auto;
+    text-align: center;
+}
+
+hr.web {
+  border: 0;
+  height: 25px;
+  background-image: url('http://www.formget.com/wp-content/uploads/2014/12/type_3.png');
+  background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.row{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.sub-title{
+    font-size: 1.5em;
+    display: inline;
+    border-bottom: 3px solid #42f468;
+}
+
+.section-about-me .about-me-content{
+    color: white;
+    font-size: 2em;
+}
+
+.section-about-me ul{
+    list-style: none;
+   margin-left: 0;
+   margin-top: 10px;
+   padding-left: 1em;
+   text-indent: -1em;
+}
+
+#header-title{
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 20%;
+}
+
+#header-title .container-fluid{
+    padding: 0 25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#social-icons{
+    text-align: center;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
