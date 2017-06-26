@@ -4,7 +4,6 @@ var express = require("express"),
     User     = require("../models/user"),
     middleware = require("../middleware"),
     nodemailer = require("nodemailer"),
-    xoauth2    = require("xoauth2"),
     Project    = require("../models/project");
     
 //Root Route
@@ -76,25 +75,28 @@ router.post("/contact", function(req, res){
         service: 'gmail',
         auth: {
             user: 'dev.brennen@gmail.com',
-            pass: 'bdcmd@V!5110'
+            pass: process.env.EMAILPASSWORD
         }
     });
 
     var mailOptions = {
         from: 'dev.brennen@gmail.com',
         to: 'brennendavis@gmail.com',
-        subject: req.body.from + " " + req.body.subject,
+        subject: req.body.from + " - " + req.body.subject,
         text: req.body.message
     };
     
     transporter.sendMail(mailOptions, function(err, res){
         if(err){
             console.log(err);
+            req.flash("error", "Problem sending email, try again later");
+            res.redirect("/");
         }else{
             console.log("email sent");
-            res.redirect("/");
         }
     });
+    req.flash("success", "Email successfully sent!");
+    res.redirect("/");
 });
 
 

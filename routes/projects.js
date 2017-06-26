@@ -20,11 +20,12 @@ router.get("/", function(req, res){
 //Create 
 router.post("/", middleware.isAdmin, function(req, res){
     var title = req.body.title,
+        address = req.body.address,
         image = req.body.image,
         category = req.body.category,
         desc = req.body.description;
     
-    var newProject = {title: title, image: image, category: category, description: desc};
+    var newProject = {title: title, address: address, image: image, category: category, description: desc};
     Project.create(newProject, function(err, project){
         if(err){
             req.flash("error", "There was a problem creating the project");
@@ -62,7 +63,7 @@ router.get("/:id/edit", middleware.isAdmin, function(req, res){
             res.redirect("back");
             console.log(err);
         }else{
-            res.render("/projects/edit", {project: project, page: "projects"});
+            res.render("projects/edit", {project: project, page: "projects"});
         }
     });
 });
@@ -70,11 +71,12 @@ router.get("/:id/edit", middleware.isAdmin, function(req, res){
 //Update
 router.put("/:id", middleware.isAdmin, function(req, res){
     var title = req.body.title,
+        address = req.body.address,
         image = req.body.image,
         category = req.body.category,
         desc = req.body.description;
         
-    var newData = {title: title, image: image, category: category, description: desc};
+    var newData = {title: title, address: address, image: image, category: category, description: desc};
     Project.findByIdAndUpdate(req.params.id, {$set: newData}, function(err, project){
         if(err){
             req.flash("error", err.message);
@@ -94,7 +96,7 @@ router.delete("/:id", middleware.isAdmin, function(req, res){
             req.flash("error", "Could not delete Project");
             res.redirect("back");
         }else{
-            res.redirect("/projects");
+            res.redirect("/");
         }
     });
 });
