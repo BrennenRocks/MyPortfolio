@@ -60,4 +60,12 @@ router.get("/logout", function(req, res) {
     res.redirect("/");
 });
 
+router.get("/color_game", function(req, res){
+    res.render("../color_game/index");
+});
+
+router.get("/music_artist", function(req, res){
+    res.render("../music_artist/index");
+});
+
 module.exports = router;

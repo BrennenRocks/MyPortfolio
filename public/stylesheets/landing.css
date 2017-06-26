@@ -6,6 +6,29 @@ h1{
 body{
     background-color: black;
     margin-top: 50px;
+    font-family: 'Baloo', cursive;
+}
+
+footer{
+	line-height: 1.5em;
+	background-color: black;
+	color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+nav{
+    font-family: 'Sigmar One', cursive;
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}
+
+.footer-title{
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .wrapper{
@@ -18,7 +41,6 @@ body{
     background-image: url(https://source.unsplash.com/TgmC7oCh9Jk);
     background-size: cover;
     background-position: center;
-    
 }
 
 .section-header .container{
@@ -43,7 +65,11 @@ background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-
 background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.section-projects .title{
+.section-contact{
+    background-color: #f2f2f2;
+}
+
+.section-projects .title, .section-contact .title{
     color: black;
     display: block;
     font-size: 3.7em;
@@ -113,7 +139,5 @@ hr.web {
 
 #social-icons{
     text-align: center;
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+    background-color: transparent;
 }

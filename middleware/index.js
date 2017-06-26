@@ -21,5 +21,5 @@ middlewareObj.isAdmin = function(req, res, next){
     }
     req.flash("error", "You need to be an Admin to do that");
     res.redirect("back");
-}
+};
 module.exports = middlewareObj;

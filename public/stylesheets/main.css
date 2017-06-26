@@ -8,5 +8,27 @@ body{
 background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: 50px;
+    font-family: 'Baloo', cursive;
+}
+
+nav{
+    font-family: 'Sigmar One', cursive;
+}
+
+footer{
+	line-height: 1.5em;
+	background-color: black;
+	color: white;
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3rem;
+    text-align: center;
+}
+
+.footer-title{
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 

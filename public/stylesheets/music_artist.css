@@ -1,0 +1,345 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 5em;
+}
+
+footer{
+	line-height: 1.5em;
+	background-color: rgba(33, 38, 45, 0.6);
+	color: white;
+}
+
+.navbar-inverse{
+	background-color: #172130;
+}
+.section-header hr{
+	width: 400px;
+	border-top: 1px solid #F8F8F8;
+	border-bottom: rgba(0,0,0,0.2);
+}
+.wrapper {
+	height: 100%;
+	width: 100%;
+	/*display: block;*/
+  	/*overflow: hidden;*/
+  	/*box-sizing: border-box;*/
+}
+
+.section-header{
+	color: white;
+	font-family: 'Montserrat Subrayada', sans-serif;
+	background-image: url(https://source.unsplash.com/By96LAr-34o);
+	background-size: cover;
+	background-position: center;
+	margin-top: 0;
+}
+
+.section-header .container {
+	width: 100%;
+	height: 700px;
+}
+
+.section-header .btn{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.section-header .scroll{
+	border-radius: 50%;
+	border: 2px white solid;
+	color: white;
+	display: block;
+	font-size: 2em;
+	margin: 0 auto;
+	top: 100px;
+	width: 50px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-content{
+background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.wrapper-content .container{
+	width: 100%;
+    height: 100%;
+    padding-right: 0;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel-inner img:hover{
+	cursor: pointer;
+	filter: brightness(50%);	
+}
+
+.affix{
+	top: 0;
+	right: 0;
+}
+
+.affix-top{
+	right: 0;
+	position: absolute;
+}
+
+.affix-bottom{
+	right: 0;
+	position: absolute;
+}
+
+.vertical-line{
+	border-right: 2px solid blue;
+}
+
+.title{
+	color: #005b7a;
+	font-size: 4em;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.sub-title{
+	color: #005b7a;
+	padding: 10px 16px;
+	text-align: center;
+}
+
+.hr-left{
+	border: 0;
+    height: 2px;
+    margin-top: 12%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 1));
+    width: 100%;
+}
+
+.hr-right{
+	border: 0;
+    height: 2px;
+    margin-top: 12%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    width: 100%;
+}
+
+.tour-dates-list{
+	list-style: none;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.tour-dates-list li{
+	background: #fff;
+	color: #005b7a;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+}
+
+.tour-dates-list li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+.tour-dates-list span{
+	background: #30af03;
+	color: white;
+	display: inline-block;
+	height: 40px;
+	margin-right: 20px;
+	opacity: 0;
+	text-align: center;
+	transition: 0.2s linear;
+	width: 0;
+
+}
+
+.tour-dates-list li:hover span{
+	opacity: 1.0;
+	width: 40px;
+	transition: 0.2s linear;
+}
+
+.tour-dates-list span:hover{
+	opacity: 1.0;
+	width: 40px;
+	background-color: #106801;
+}
+
+.over-image-txt{
+	color: white;
+	position: absolute;
+	background-color: rgba(142, 142, 142, 0.6);
+	padding-left: 5.5%;
+	font-size: 1em;
+}
+
+.section-latest-news img:hover{
+	cursor: pointer;
+	filter: brightness(50%);
+}
+
+.section-subscribe{
+	margin-bottom: 100px;
+}
+
+.section-subscribe p{
+	color: #005b7a;
+	padding-left: 50%;
+}
+
+.label-email{
+	text-align: left;
+}
+
+.required-star{
+	color: red;
+}
+
+#header-title{
+	text-align: center;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+#listen-icons{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#listen-icons span{
+	border: 2px gray solid;
+	padding: 5% 5%;
+	margin: 0 5px;
+}
+
+#listen-icons .col-xs-6{
+	margin: 20px 0;
+}
+
+#title-tour-dates{
+	color: #005b7a;
+}
+
+#tour-dates{
+	display: block;
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 25px;
+}
+
+#tour-dates hr{
+	width: 30%;
+}
+
+#tour-dates .thumbnail hr{
+	width: 50%;
+}
+
+#tour-dates .thumbnail{
+	color: #005b7a;
+	display: block;
+	transition: 0.2s linear;
+}
+
+#tour-dates .thumbnail:hover{
+	background-color: #30af03;
+}
+
+#tour-dates .btn{
+	color: white;
+	outline: none;
+	width: 100%;
+
+}
+
+#insane-numbers-txt, #new-album-txt{
+	bottom: 60%;
+}
+
+#gets-cat-txt, #loves-naps-txt{
+	bottom: 10%;
+}
+
+#goes-plat-txt{
+	bottom: 15%;
+	right: 60%;
+	font-size: 2em;
+}
+
+#title-subscribe{
+	font-size: 3em;
+}
+
+#subscribe-form{
+	text-align: center;
+	display: block;
+	color: #005b7a;
+	padding: 0 25px 0 15px;
+}
+
+#subscribe-form label{
+	width: 25%;
+}
+
+#subscribe-form input[type=email]{
+	height: 40px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#subscribe-form button{
+	width: 50%;
+}
+
+#subscribe-icons{
+	padding-top: 55px;
+	padding-left: 25px;
+}
+
+#subscribe-icons i{
+	margin: 10px 0;
+}
+
+
+@media (max-width: 992px) {
+    .affix {
+        position: static;
+    }
+
+    #goes-plat-txt{
+    	bottom: 10%;
+    	left: 0;
+    	font-size: 1em;
+    }
+}
