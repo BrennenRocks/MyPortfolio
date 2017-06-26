@@ -1,23 +1,21 @@
 <% include ./partials/header %>
-
-    <link rel="stylesheet" href="/stylesheets/landing.css">
     <div class="wrapper">
-        <div class="section section-header">
+        <div id="section-header" class="section">
             <div class="container">
                 <div id="header-title">
                     <h1>Brennen Programs</h1>
                     <h3>Fullstack Web Development</h3>
                     <div id="social-icons" class="row">
-                      <div class="col-md-3"><a href="https://www.facebook.com/brennen.davis.54" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
-                      <div class="col-md-3"><a href="https://www.instagram.com/brennenrocks_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-                      <div class="col-md-3"><a href="https://www.linkedin.com/in/brennen-davis/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
-                      <div class="col-md-3"><a href="https://github.com/BrennenRocks" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></div>
+                      <div class="col-sm-3"><a href="https://www.facebook.com/brennen.davis.54" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+                      <div class="col-sm-3"><a href="https://www.instagram.com/brennenrocks_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                      <div class="col-sm-3"><a href="https://www.linkedin.com/in/brennen-davis/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></div>
+                      <div class="col-sm-3"><a href="https://github.com/BrennenRocks" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="wrapper-content">
-          <div class="section section-projects">
+          <div id="section-projects" class="section">
             <div class="container">
                 <div class="row">
                     <div class="title">Web</div>
@@ -40,14 +38,14 @@
               </div>
             </div>
           </div>
-          <div class="section section-about-me">
+          <div id="section-stack" class="section">
             <div class="container">
               <div class="row">
                 <div class="title">Experience With</div>
                 <hr class="web">
               </div>
-              <div class="row text-center about-me-content">
-                <div class="col-md-6">
+              <div id="stack-content" class="row text-center">
+                <div class="col-sm-6">
                   <div class="sub-title">Front End</div>
                   <ul>
                     <li><i class="icon-html5-alt"></i> HTML5</li>
@@ -57,7 +55,7 @@
                     <li><i class="icon-bootstrap"></i> Bootstrap</li>
                   </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                   <div class="sub-title">Back End</div>
                     <ul>
                       <li><i class="icon-nodejs"></i> Node.js</li>
@@ -70,7 +68,7 @@
               </div>
             </div>
           </div>
-          <div class="section section-contact">
+          <div id="section-contact" class="section section-contact">
             <div class="container">
               <div class="row">
                 <div class="title">Contact Me</div>
@@ -78,15 +76,15 @@
                       <form action="/contact" method="POST">
                           <div class="form-group">
                               <label for="from">From</label>
-                              <input class="form-control" type="text" name="from" id="from" placeholder="from">
+                              <input class="form-control" type="text" name="from" id="from" placeholder="from" required>
                           </div>
                           <div class="form-group">
                               <label for="subject">Subject</label>
-                              <input class="form-control" type="text" name="subject" id="subject" placeholder="subject">
+                              <input class="form-control" type="text" name="subject" id="subject" placeholder="subject" required>
                           </div>
                           <div class="form-group">
                               <label for="message">Message</label>
-                              <textarea class="form-control" name="message" id="message"></textarea>
+                              <textarea class="form-control" name="message" id="message" required></textarea>
                           </div>
                           <div class="form-group">
                               <button class="btn btn-lg btn-primary btn-block">Send</button>

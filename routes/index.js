@@ -3,6 +3,8 @@ var express = require("express"),
     passport = require("passport"),
     User     = require("../models/user"),
     middleware = require("../middleware"),
+    nodemailer = require("nodemailer"),
+    xoauth2    = require("xoauth2"),
     Project    = require("../models/project");
     
 //Root Route
@@ -67,5 +69,33 @@ router.get("/color_game", function(req, res){
 router.get("/music_artist", function(req, res){
     res.render("../music_artist/index");
 });
+
+//Setup Contact form to email me
+router.post("/contact", function(req, res){
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'dev.brennen@gmail.com',
+            pass: 'bdcmd@V!5110'
+        }
+    });
+
+    var mailOptions = {
+        from: 'dev.brennen@gmail.com',
+        to: 'brennendavis@gmail.com',
+        subject: req.body.from + " " + req.body.subject,
+        text: req.body.message
+    };
+    
+    transporter.sendMail(mailOptions, function(err, res){
+        if(err){
+            console.log(err);
+        }else{
+            console.log("email sent");
+            res.redirect("/");
+        }
+    });
+});
+
 
 module.exports = router;

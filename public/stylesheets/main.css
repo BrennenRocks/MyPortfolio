@@ -27,8 +27,28 @@ footer{
     text-align: center;
 }
 
+/*footer{*/
+/*	line-height: 1.5em;*/
+/*	background-color: black;*/
+/*	color: white;*/
+/*    padding: 3rem;*/
+/*    text-align: center;*/
+/*}*/
+
+#register-form{
+    padding-bottom: 120px;
+}
+
+#login-form{
+    padding-bottom: 230px;
+}
+
 .footer-title{
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+#footer-list{
+    list-style-type: none;
 }
 
