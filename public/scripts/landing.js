@@ -1,22 +1,13 @@
 /*global $*/
-$(function(){
+$(function($){
 /**
  * Scroll down to certain sections of landing page
  */
-    $("nav").on("click", "#nav-header-link", function(){
-        $("html, body").animate({ scrollTop: 0 }, 1000);
-    });
-    
-    $("nav").on("click", "#nav-projects-link", function(){
-        $("html, body").animate({ scrollTop: $("#section-projects").offset().top}, 1000);
-    });
-    
-    $("nav").on("click", "#nav-stack-link", function(){
-        $("html, body").animate({ scrollTop: $("#section-stack").offset().top}, 1000);
-    });
-    
-    $("nav").on("click", "#nav-contact-link", function(){
-        $("html, body").animate({ scrollTop: $("#section-contact").offset().top}, 1000);
+    $('a.page-scroll').on("click", function(event){
+        $('html, body').stop().animate({
+            scrollTop: ($($(this).attr('href')).offset().top)
+        }, 1000);
+        event.preventDefault();
     });
     
 /**
@@ -39,6 +30,14 @@ $(function(){
             checkScroll();
         });
     }
+    
+/**
+ * Close Collapsable Navbar on item click
+ */
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+    
 });
 
 

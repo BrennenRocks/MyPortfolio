@@ -49,6 +49,25 @@ footer{
 }
 
 #footer-list{
+    padding: 0;
     list-style-type: none;
+}
+
+@media (max-width: 768px){
+    footer .col-sm-4{
+        padding-bottom: 20px;
+    }
+    
+    .navbar-bigger{
+        padding: 20px 0;
+    }
+    
+    .navbar-brand{
+        font-size: 18px;
+    }
+    
+    .navbar-bigger{
+        padding: 0;
+    }
 }
 
