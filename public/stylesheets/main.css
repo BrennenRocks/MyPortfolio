@@ -53,6 +53,11 @@ footer{
     list-style-type: none;
 }
 
+#user-form{
+    width: 50%; 
+    margin: 25px auto;
+}
+
 @media (max-width: 768px){
     footer .col-sm-4{
         padding-bottom: 20px;
@@ -64,6 +69,10 @@ footer{
     
     .navbar-bigger{
         padding: 0;
+    }
+    
+    #user-form{
+        width: 100%;
     }
 }
 

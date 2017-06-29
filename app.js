@@ -25,7 +25,7 @@ app.use(flash());
 
 //Passport Config
 app.use(require("express-session")({
-    secret: "I love my wife, Rachel",
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false
 }));
