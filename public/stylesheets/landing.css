@@ -166,6 +166,7 @@ hr.web {
     margin: 25px auto;
 }
 
+/* Allows menu to collapse on tablets */
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
