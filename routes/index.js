@@ -62,11 +62,11 @@ router.get("/logout", function(req, res) {
 });
 
 router.get("/color_game", function(req, res){
-    res.render("../color_game/index");
+    res.render("../views/outside_projects/colorgame");
 });
 
 router.get("/music_artist", function(req, res){
-    res.render("../music_artist/index");
+    res.render("..//views/outside_projects/music_artist");
 });
 
 //Setup Contact form to email me
